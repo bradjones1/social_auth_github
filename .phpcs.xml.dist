@@ -1,5 +1,5 @@
-<ruleset name="drupal/social_auth_pbs">
-  <description>Social Auth PBS module CodeSniffer configuration.</description>
+<ruleset name="drupal/social_auth_github">
+  <description>Social Auth Github module CodeSniffer configuration.</description>
 
   <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md,yml"/>
   <config name="drupal_core_version" value="8"/>
