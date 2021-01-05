@@ -93,5 +93,9 @@ MAINTAINERS
 -----------
 
 Current maintainers:
- * Getulio Sánchez (gvso) - https://www.drupal.org/u/gvso
- * Himanshu Dixit (himanshu-dixit) - https://www.drupal.org/u/himanshu-dixit
+
+ * [Christopher C. Wells (wells)](https://www.drupal.org/u/wells)
+
+Development sponsored by:
+
+ * [Cascade Public Media](https://www.drupal.org/cascade-public-media)

@@ -5,14 +5,25 @@
     "keywords": ["Drupal"],
     "license": "GPL-2.0+",
     "homepage": "https://www.drupal.org/project/social_auth_github",
-    "minimum-stability": "dev",
     "support": {
         "issues": "https://www.drupal.org/project/issues/social_auth_github",
-        "source": "http://cgit.drupalcode.org/social_auth_github"
+        "source": "https://git.drupalcode.org/project/social_auth_github"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url":  "https://packages.drupal.org/8"
+        }
+    ],
     "require": {
         "league/oauth2-github": "^2.0",
-        "drupal/social_auth": "^2.0"
+        "drupal/social_auth": "^2.0",
+        "drupal/core": "^8.8 || ^9"
+    },
+    "require-dev": {
+        "drupal/coder": "^8.3"
     },
     "authors": [
         {
@@ -22,6 +33,10 @@
         {
             "name": "Himanshu Dixit (himanshu-dixit)",
             "email": "hudixt@gmail.com"
+        },
+        {
+            "name": "Christopher C. Wells (wells)",
+            "email": "drupal.org@chris-wells.net"
         }
     ]
 }
