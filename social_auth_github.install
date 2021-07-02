@@ -36,8 +36,7 @@ function social_auth_github_update_8201(&$sandbox) {
 }
 
 /**
- * Default scope has been narrowed to user:email. Include the previous scopes
- * so as to not break existing integrations.
+ * Narrow default scope to user:email. Previous scopes will be preserved.
  */
 function social_auth_github_update_8301(&$sandbox) {
   $config = \Drupal::configFactory()
@@ -48,9 +47,5 @@ function social_auth_github_update_8301(&$sandbox) {
     implode(',', array_merge($scopes, ['user']))
   );
   $config->save(TRUE);
-  return (string) new TranslatableMarkup(
-    "Social Auth GitHub now only requests 'user:email' scope by default."
-    . "\n\tThe other prior default, 'user' has been appended to your requested scopes for backwards compatibility."
-    . "\n\tConsider if you require this scope (you probably don't) and adjust your configuration accordingly."
-  );
+  return (string) new TranslatableMarkup("Social Auth GitHub now only requests 'user:email' scope by default.\n\tThe other prior default, 'user' has been appended to your requested scopes for backwards compatibility.\n\tConsider if you require this scope (you probably don't) and adjust your configuration accordingly.");
 }
