@@ -77,7 +77,7 @@ class GitHubAuthSettingsForm extends SocialAuthSettingsForm {
       '#title' => $this->t('Scopes for API call'),
       '#default_value' => $config->get('scopes'),
       '#description' => $this->t('Define any additional scopes to be requested, separated by a comma (e.g.: public_repo,user:follow).<br>
-                                  The scopes \'user\' and \'user:email\' are added by default and always requested.<br>
+                                  The scope  \'user:email\' is added by default and always requested.<br>
                                   You can see the full list of valid scopes and their description <a href="@scopes">here</a>.', ['@scopes' => 'https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/']),
     ];
 
