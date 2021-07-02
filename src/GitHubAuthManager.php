@@ -62,7 +62,7 @@ class GitHubAuthManager extends OAuth2Manager {
    */
   public function getAuthorizationUrl() {
 
-    $scopes = ['user', 'user:email'];
+    $scopes = ['user:email'];
 
     $extra_scopes = $this->getScopes();
     if ($extra_scopes) {
