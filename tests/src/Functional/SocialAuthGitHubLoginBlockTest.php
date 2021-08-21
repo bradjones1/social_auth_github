@@ -18,14 +18,13 @@ class SocialAuthGitHubLoginBlockTest extends SocialAuthTestBase {
    *
    * @var array
    */
-  public static $modules = ['block', 'social_auth_github'];
+  protected static $modules = ['block', 'social_auth_github'];
 
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
-
     $this->provider = 'github';
   }
 

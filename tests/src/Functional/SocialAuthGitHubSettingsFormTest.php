@@ -18,16 +18,15 @@ class SocialAuthGitHubSettingsFormTest extends SocialAuthTestBase {
    *
    * @var array
    */
-  public static $modules = ['social_auth_github'];
+  protected static $modules = ['social_auth_github'];
 
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     $this->module = 'social_auth_github';
     $this->provider = 'github';
     $this->moduleType = 'social-auth';
-
     parent::setUp();
   }
 
