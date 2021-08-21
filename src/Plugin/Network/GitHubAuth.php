@@ -56,7 +56,7 @@ class GitHubAuth extends NetworkBase implements GitHubAuthInterface {
       ];
 
       // Proxy configuration data for outward proxy.
-      $proxyUrl = $this->siteSettings->get('http_client_config')['proxy']['http'];
+      $proxyUrl = $this->siteSettings->get('http_client_config')['proxy']['http'] ?? NULL;
       if ($proxyUrl) {
         $league_settings['proxy'] = $proxyUrl;
       }
